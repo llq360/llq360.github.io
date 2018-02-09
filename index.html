@@ -1,66 +1,73 @@
-<!DOCTYPE html>
+
+<!doctype html>
 <html>
+
 <head>
-<title>急速浏览器</title>
-<link rel="icon" href="logo.jpg" type="image/x-icon">
-<link type="text/css" rel="stylesheet" href="/index.css">
+    <meta charset="utf-8">
+    <!--    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />-->
+    <meta name="renderer" content="webkit|ie-stand" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>FlowerCool 花酷</title>
+    <meta name="keywords" content="借，贷，贷款,小额贷款,征信,房贷,车贷,抵押贷款,信用贷款,网贷,个人贷款,借钱,无抵押贷款,借贷,信用,手机贷款,个人贷款 ,信用卡,贷款,贷款平台,网上借贷,网上贷款,贷款申请, 贷款,个人贷款,小额贷款,抵押贷款,信用贷款,贷款平台,网上贷款" />
+    <meta name="description" content="速贷之家官版是纯线上贷款垂直搜索平台，致力于为个人，上班族，中小微企业提供金融产品搜索比价，推荐，申请服务，业务涵盖个人信用贷款，极速贷款，企业贷款等，轻松实现贷款需求。" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <!--[if lte IE 8]>
+	<style type="text/css">
+		html,body{width:100%; height:100%; overflow:scroll}
+		.section-btn{display:none;}
+	</style>
+	<![endif]-->
 </head>
+
 <body>
-<div class="kyx">
-<div class="kyx_head">
-<div class="kyx_shell">
-<div class="kyx_container">
-<h2><img src="logo.jpg"></h2>
-</div><!-- kyx_container -->
-</div><!-- kyx_shell -->
-</div><!-- kyx_head -->
-
-<div class="kyx_body">
-<div class="kyx_shell">
-<div class="kyx_container">
-
-<div class="kyx_wrapper">
-<div class="wrapper aboutus">
-<h2>关于我们</h2>
-<p>
-急速浏览器是上海缘途信息技术有限公司旗下APP。<br>秉承极简的设计风格，汇集全新的版面布局、强大的智能搜索、海量的优质内容。
-</p>
-</div><!-- wrapper aboutus -->
-</div><!-- kyx_wrapper -->
-
-<div class="kyx_wrapper">
-<div class="wrapper cooperation">
-<h2>合作</h2>
-<p>请发邮件至yuantu360#qq.com</p>
-</div><!-- wrapper cooperation -->
-</div><!-- kyx_wrapper -->
-
-
-<div class="kyx_wrapper">
-<div class="wrapper connectus">
-<h2>联系我们</h2>
-<p>
-请发邮件至yuantu360#qq.com
-</p>
-</div><!-- wrapper connectus -->
-</div><!-- kyx_wrapper -->
-
-</div><!-- kyx_container -->
-</div><!-- kyx_shell -->
-<div class="kyx_us_bg"></div><!-- kyx_intro_bg -->
-</div><!-- kyx_body -->
-
-<div class="kyx_foot">
-<div class="kyx_shell">
-<div class="kyx_container">
-<p class="p2">
-<span>@2017 急速浏览器APP</span>
-</p>
-<p class="p3">2017 上海缘途信息技术有限公司
- all right reserved. </p>
-</div><!-- kyx_container -->
-</div><!-- kyx_shell -->
-</div><!-- kyx_foot -->
-</div><!-- kyx -->
+    <div class="container">
+        <header>
+            <p> <span id="5">联系我们</span><span id="4">借款流程</span><span id="3">产品介绍</span><span id="2">公司简介</span><span id="1" class="onClick">首页</span> </p>
+        </header>
+        <div class="banner section1">
+            <p>速贷之家（官版），极速下款
+                <br><span>门槛低、速度快、额度灵活、利息低</span></p>
+        </div>
+        <div class="contant">
+            <section class="section2">
+                <h3></h3>
+                <div>贵州桐梓农村商业银行股份有限公司旗下专业个人信用业务产品--速贷之家（官版），
+                    <br> 致力于为有借款服务需求的用户提供基于互联网大数据风控的便捷高效的信用借款服。
+                    <br>用户可在线上移动端轻松完成信用评估、借款分期等操作。
+                    <br>我们为都市白领搭建了一个安全、透明的互联网信用服务平台。</div>
+            </section>
+            <section class="section3">
+                <h3></h3>
+                <div></div>
+            </section>
+            <section class="section4">
+                <h3></h3>
+                <div></div>
+            </section>
+            <section class="section5">
+                <h3></h3>
+                <div>
+                    <p>010-53346998&nbsp;&nbsp;&nbsp;&nbsp;服务时间：9：00-18:00</p>
+                    <p>办公地点：贵州省遵义市桐梓县娄山关镇河滨南路203号</p>
+                </div>
+            </section>
+        </div>
+        <footer> Copyright ©2016-2017 贵州桐梓农村商业银行股份有限公司所有 版权所有 </footer>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script>
+        $('header span').on('click', function() {
+            var id = $(this).attr('id');
+            $(this).addClass('onClick').siblings('span').removeClass('onClick');
+            $('#section' + id).scrollTop();
+            var scrollNum = $('.section' + id).offset().top - 100;
+            $("html,body").animate({
+                scrollTop: scrollNum
+            }, 500);
+        });
+    </script>
+    <script src="js/statistics.js"></script>
 </body>
+
 </html>
